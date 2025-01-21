@@ -3,7 +3,7 @@
     "target": "ES2020",
     "module": "ESNext",
     "esModuleInterop": true,
-    "types": ["bun", "node"],
+    "types": ["@cloudflare/workers-types", "bun", "node"],
     "lib": ["ES2020", "DOM"],
     "moduleResolution": "Node",
     "strict": true,
