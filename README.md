@@ -25,8 +25,8 @@ To run this in the background and upload it every hour:
 
 # Ideas for making this useful
 
-- Try scraping every page stored and augment the with its markdown and raw text.
-- Analyse each url+text into a summary of a sentence
+- Try scraping every page stored and augment the with its markdown and raw text (e.g. with https://github.com/janwilmake/llmtext.reader)
+- Analyse each url+text into a summary of a sentence (with your desired LLM API)
 - Create an endpoint that shows domains visited most, average page duration, total duration, duration percentage, etc.
 - Create an endpoint to get context between two times (?from=...&until=...) that allows us to gather the context for cros-processing this with another context (e.g. audio or video)
 - Analyse URL structure of domains visited (uncover patterns) using LLMs
