@@ -1,4 +1,4 @@
-Script you can run on your computer in the background, to export your Safari history every 15 minutes and upload it to S3.
+Script you can run on your computer in the background, to export your Safari history every hour and upload it to a D1 database. The goal with this is to be able to have browsing history as additional context for your AI.
 
 # How to use:
 
@@ -16,3 +16,15 @@ To run this in the background and upload it every hour:
 - run `pm2 start job.js --name "safari-history-tracker"`
 - run `pm2 save` to ensure it reruns at restart
 - run `pm2 logs safari-history-tracker` to view if it worked
+
+# Ideas for making this useful
+
+- Try scraping every page stored and augment the with its markdown and raw text.
+- Analyse each url+text into a summary of a sentence
+- Create an endpoint that shows domains visited most, average page duration, total duration, duration percentage, etc.
+- Create an endpoint to get context between two times (?from=...&until=...) that allows us to gather the context for cros-processing this with another context (e.g. audio or video)
+- Analyse URL structure of domains visited (uncover patterns) using LLMs
+
+# Wishlist
+
+- Run workerd locally (https://github.com/cloudflare/workerd) so this doesn't need to be hosted on cloudflare (Full privacy)
