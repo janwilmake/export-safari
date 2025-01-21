@@ -1,5 +1,7 @@
 Script you can run on your computer in the background, to export your Safari history every hour and upload it to a D1 database. The goal with this is to be able to have browsing history as additional context for your AI.
 
+See also: https://github.com/janwilmake/efficient-recorder
+
 # How to use:
 
 - Ensure you have `node` and `bun`
